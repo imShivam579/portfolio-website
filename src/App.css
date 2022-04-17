@@ -133,7 +133,7 @@ p,
 }
 .fs-link-rg {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
@@ -148,4 +148,34 @@ p,
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+body {
+  background: var(--black-100);
+  overflow-x: hidden;
+}
+h4,
+h2 {
+  color: var(--grey-100);
+}
+li {
+  color: var(--grey-200);
+}
+.burger-menu {
+  transition: all ease-in-out 1000ms;
+  -webkit-transition: all ease-in-out 1000ms;
+  -moz-transition: all ease-in-out 1000ms;
+  -ms-transition: all ease-in-out 1000ms;
+  -o-transition: all ease-in-out 1000ms;
+}
+.burger-menu.hidden {
+  transition: all ease-in-out 1000ms;
+  transform: translateX(100%) !important;
+  -webkit-transform: translateX(100%) !important;
+  -moz-transform: translateX(100%) !important;
+  -ms-transform: translateX(100%) !important;
+  -o-transform: translateX(100%) !important;
+  -webkit-transition: all ease-in-out 1000ms;
+  -moz-transition: all ease-in-out 1000ms;
+  -ms-transition: all ease-in-out 1000ms;
+  -o-transition: all ease-in-out 1000ms;
 }
