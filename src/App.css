@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+  /** color primary  */
+  --primary-50: #ebe9fe;
+  --primary-100: #dedbfd;
+  --primary-200: #beb7fb;
+  --primary-300: #9c92f8;
+  --primary-400: #7b6ef6;
+  --primary-500: #5a4af4;
+  --primary-600: #483bc3;
+  --primary-700: #362c92;
+  --primary-800: #251e62;
+  --primary-900: #120f31;
+  /** color grey  */
+  --grey-50: #ebeef5;
+  --grey-100: #c3c8d4;
+  --grey-200: #a8aebf;
+  --grey-300: #8e95a9;
+  --grey-400: #767e94;
+  --grey-500: #61697f;
+  --grey-600: #475069;
+  --grey-700: #323b54;
+  --grey-800: #20283e;
+  --grey-900: #121829;
+  /** color white  */
+  --white-10: #ffffff1a;
+  --white-20: #ffffff33;
+  --white-30: #ffffff4d;
+  --white-40: #ffffff66;
+  --white-50: #ffffff80;
+  --white-65: #ffffffa6;
+  --white-75: #ffffffbf;
+  --white-100: #ffffff;
+  /** color black  */
+  --black-10: #0000001a;
+  --black-20: #00000033;
+  --black-30: #0000004d;
+  --black-40: #00000066;
+  --black-50: #00000080;
+  --black-65: #000000a6;
+  --black-75: #000000bf;
+  --black-100: #000000;
+  /** font family  */
+  --fontfamily-primary: Poppins;
+}
+* {
+  font-family: var(--fontfamily-primary), sans-serif;
+}
+h1,
+.h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+}
+h2,
+.h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+}
+h3,
+.h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+h4,
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+}
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+.fs-b-lg {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+p,
+.fs-b-rg {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.fs-b-sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.fs-b-xsm {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+.fs-cp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+.fs-ol-rg {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+.fs-ol-sm {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+.fs-link-rg {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.fs-link-sm {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.fs-link-xsm {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
