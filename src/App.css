@@ -55,10 +55,10 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 72px;
-  letter-spacing: -0.02em;
+  font-size: 48px !important;
+  font-weight: 600 !important;
+  line-height: 72px !important;
+  letter-spacing: -0.02em !important;
 }
 h3,
 .h3 {
@@ -137,7 +137,8 @@ p,
   line-height: 24px;
   letter-spacing: 0.02em;
 }
-.fs-link-sm {
+.fs-link-sm,
+a {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
