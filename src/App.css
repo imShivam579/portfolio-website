@@ -95,6 +95,7 @@ h6,
   letter-spacing: 0em;
 }
 p,
+span,
 .fs-b-rg {
   font-size: 16px;
   font-weight: 400;
@@ -156,11 +157,23 @@ body {
   background: var(--black-100);
   overflow-x: hidden;
 }
+h1,
+h2,
+h3,
 h4,
-h2 {
-  color: var(--grey-100);
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--grey-50);
 }
-a {
+a,
+span,
+p {
   color: var(--grey-200);
 }
 a:hover {
