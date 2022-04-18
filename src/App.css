@@ -158,8 +158,17 @@ h4,
 h2 {
   color: var(--grey-100);
 }
-li {
+a {
   color: var(--grey-200);
+}
+a:hover {
+  color: var(--grey-50);
+}
+a:active {
+  color: var(--grey-400);
+}
+#burgerMenu {
+  height: calc(100vh - var(--offSetHeight));
 }
 .burger-menu {
   transition: all ease-in-out 1000ms;
