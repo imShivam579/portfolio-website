@@ -121,15 +121,17 @@ p,
 }
 .fs-ol-rg {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .fs-ol-sm {
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .fs-link-rg {
   font-size: 16px;
