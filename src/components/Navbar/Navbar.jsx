@@ -58,7 +58,7 @@ function Navbar() {
       </button>
 
       <div
-        className={`burger-menu absolute top-0 bottom-0 right-0 w-screen h-screen md:hidden bg-black ${
+        className={`burger-menu absolute top-0 bottom-0 right-0 w-screen h-screen md:hidden bg-black z-50 ${
           !isMenuOpen ? "hidden" : ""
         }`}
       >
