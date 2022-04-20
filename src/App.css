@@ -62,7 +62,7 @@ span,
 .fs-link-sm,
 a {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
@@ -90,25 +90,6 @@ a:active {
 #burgerMenu {
   height: calc(100vh - var(--offSetHeight));
 }
-.burger-menu {
-  transition: all ease-in-out 1000ms;
-  -webkit-transition: all ease-in-out 1000ms;
-  -moz-transition: all ease-in-out 1000ms;
-  -ms-transition: all ease-in-out 1000ms;
-  -o-transition: all ease-in-out 1000ms;
-}
-.burger-menu.hidden {
-  transition: all ease-in-out 1000ms;
-  transform: translateX(100%) !important;
-  -webkit-transform: translateX(100%) !important;
-  -moz-transform: translateX(100%) !important;
-  -ms-transform: translateX(100%) !important;
-  -o-transform: translateX(100%) !important;
-  -webkit-transition: all ease-in-out 1000ms;
-  -moz-transition: all ease-in-out 1000ms;
-  -ms-transition: all ease-in-out 1000ms;
-  -o-transition: all ease-in-out 1000ms;
-}
 
 .work-group .work-card .thumb:before {
   content: "";
@@ -130,4 +111,15 @@ a:active {
   .work-group .work-card:nth-child(4) {
     margin-top: 0px;
   }
+}
+.menu-bg {
+  height: 10vh;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0%;
+  visibility: hidden;
+  width: 100%;
+  z-index: 11;
 }
