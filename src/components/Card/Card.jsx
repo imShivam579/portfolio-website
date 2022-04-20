@@ -1,32 +1,28 @@
 import React from "react";
 
-function Card(props) {
+function Card({ imgPath }) {
   return (
-    <div className={`col flex  h-96 border-red-100 border-2`}>
-      <div className={`card h-fit border-2 border-red-500`}>
-        <div
-          className={`img-wrapper overflow-hidden rounded-xl ${
-            props.alignCard === "end" ? "h-16" : null
-          }`}
-        >
-          <img
-            className="object-cover w-full h-full"
-            src="./images/card-img.png"
-            alt=""
-          />
-        </div>
-        <div className="card-wrapper">
-          <div className="tag-wrapp"></div>
-          <div className="card-text">
-            <div className="title h3">Project Name</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis nostrum quo, illo molestias incidunt esse!
-            </p>
-          </div>
+    <a
+      className={`work-card flex flex-col sm:flex-row-reverse md:flex-col`}
+      href="#"
+    >
+      <div
+        className={`thumb overflow-hidden rounded-xl bg-gray-800 relative w-full`}
+      >
+        <img
+          className="object-cover h-full w-full  absolute top-0 left-0 right-0"
+          src={imgPath}
+          alt=""
+        />
+      </div>
+      <div className="card-wrapper pr-10 md:p-0">
+        <div className="tag-wrapp"></div>
+        <div className="card-text" style={{ minWidth: "240px" }}>
+          <div className="title h4 mt-8 lg:mt-12">Pharaon Capital</div>
+          <p className="mt-2 lg:mt-4">Website & branding</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -63,14 +63,14 @@ h2,
 h3,
 .h3 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 40px;
   letter-spacing: -0.02em;
 }
 h4,
 .h4 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.015em;
 }
@@ -203,4 +203,26 @@ a:active {
   -moz-transition: all ease-in-out 1000ms;
   -ms-transition: all ease-in-out 1000ms;
   -o-transition: all ease-in-out 1000ms;
+}
+
+.work-group .work-card .thumb:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.work-card:first-child .thumb:before,
+.work-group .work-card:nth-child(4) .thumb:before {
+  padding-top: 66%;
+}
+
+.work-group .work-card:nth-child(3),
+.work-group .work-card:nth-child(4) {
+  align-self: flex-start;
+  margin-top: 32px;
+}
+@media (max-width: 768px) {
+  .work-group .work-card:nth-child(3),
+  .work-group .work-card:nth-child(4) {
+    margin-top: 0px;
+  }
 }
