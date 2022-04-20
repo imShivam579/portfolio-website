@@ -1,6 +1,21 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontSize: {
+      "2xl": [
+        "24px",
+        {
+          letterSpacing: "-0.01em",
+        },
+      ],
+      "3xl": [
+        "32px",
+        {
+          letterSpacing: "-0.02em",
+          lineHeight: "40px",
+        },
+      ],
+    },
     colors: {
       primary: {
         50: " #ebe9fe",
@@ -49,10 +64,10 @@ module.exports = {
     },
     container: {
       padding: {
-        DEFAULT: "2rem",
-        sm: "2rem",
-        md: "2.5rem",
-        lg: "4rem",
+        DEFAULT: "0.5rem",
+        sm: "1rem",
+        md: "1rem",
+        lg: "1rem",
         xl: "5rem",
         "2xl": "5rem",
       },
