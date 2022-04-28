@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-:root {
-  /** font family  */
-  --fontfamily-primary: Poppins;
-}
-* {
-  font-family: var(--fontfamily-primary), sans-serif;
-}
-:root {
-  --h1: 120px;
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
 }
 .h1 {
   font-size: 64px;
@@ -28,8 +22,8 @@
   letter-spacing: -0.02em;
 }
 .h4 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: var(--h4);
+  font-weight: var(--bold-font);
   line-height: 32px;
   letter-spacing: -0.015em;
 }
@@ -78,14 +72,14 @@ p,
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.fs-link-rg {
+.fs-link-rg,
+a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
-.fs-link-sm,
-a {
+.fs-link-sm {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -149,7 +143,111 @@ a:active {
   z-index: 11;
 }
 :root {
-  --h1: 120px;
+  --off-white: #f7f8fb;
+  --white: #fff;
+  --black: #111;
+  --dark-gray: #555;
+  --border: #ddd;
+  --light-font: 400;
+  --bold-font: 500;
+  --body: 2rem;
+  --h1: 12rem;
+  --h2: 7.2rem;
+  --h3: 3.6rem;
+  --h4: 2.4rem;
+  --gap-12: 12rem;
+  --gap-6: 6rem;
+  --gap-4: 4rem;
+  --gap-3: 3rem;
+  --nav-height: 10rem;
+  --main-font: Poppins;
+  --nav-height: 10rem;
+}
+@media (max-width: 1000px) {
+  :root {
+    --h1: 9rem;
+    --h2: 6.4rem;
+    --h3: 3.2rem;
+    --gap-12: 10rem;
+    --gap-6: 5rem;
+    --gap-4: 3rem;
+    --gap-3: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --h1: 7.2rem;
+    --h2: 5.6rem;
+    --h3: 3rem;
+    --gap-12: 9rem;
+    --gap-6: 4.5rem;
+    --gap-4: 2.8rem;
+    --gap-3: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --nav-height: 8rem;
+    --body: 1.9rem;
+    --h1: 12vw;
+    --h2: 4.2rem;
+    --h3: 2.5rem;
+    --h4: 2.2rem;
+    --ico-dimension: 7rem;
+    --gap-12: 8rem;
+    --gap-6: 4rem;
+    --gap-4: 2.4rem;
+    --gap-3: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding-bottom: calc(var(--gap-12) + var(--nav-height));
+    padding-top: calc(var(--gap-12) + var(--nav-height));
+  }
+}
+.hero {
+  background-color: var(--white);
+  overflow: hidden;
+  padding-bottom: 22rem;
+  padding-top: 22rem;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+user agent stylesheet div {
+  display: block;
+}
+style attribute {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  opacity: 1;
+  pointer-events: all;
+}
+body,
+h1 {
+  font-weight: 400;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: var(--main-font);
+  font-size: var(--body);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-size: var(--body);
+  font-family: var(--main-font), sans-serif;
 }
 h1 {
   font-size: var(--h1);
@@ -157,8 +255,65 @@ h1 {
   line-height: calc(var(--h1) * 1.07);
   font-weight: 400;
 }
+.navbar {
+  height: var(--nav-height);
+}
+.navbar .main-menu li {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: var(--bold-font);
+  margin-left: 4rem;
+  transition: 0.2s ease-out;
+}
+@media (max-width: 800px) {
+  .navbar {
+    position: fixed;
+  }
+  .navbar .mobile-menu {
+    display: flex;
+  }
+  .navbar .main-menu {
+    display: none;
+  }
+}
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+@media (max-width: 100px) {
+  :root {
+    --h1: 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper .hero-content {
+    left: 10rem;
+  }
+}
+
+.heroSection {
+  overflow: hidden;
+  padding-bottom: 22rem;
+  padding-top: 22rem;
+}
+@media (max-width: 1200px) {
+  .heroSection {
+    padding-bottom: calc(var(--gap-12) + var(--nav-height));
+    padding-top: calc(var(--gap-12) + var(--nav-height));
+  }
+}
+.line {
+  display: block;
+  height: calc(var(--h1) * 1.2);
+  overflow: hidden;
+}
+.heroSection h1 .line:nth-child(2) {
+  left: 19.3rem;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .hero h1 .line:last-child {
+    left: 16rem;
+  }
 }
