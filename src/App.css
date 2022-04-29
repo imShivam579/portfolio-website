@@ -507,3 +507,55 @@ h2 .line:nth-child(2) {
     position: relative;
   }
 }
+#work .work-group .work-card .title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--gap-4);
+}
+@media (max-width: 800px) {
+  #work .work-group .work-card .title {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  #work .work-group .work-card .card-content .title {
+    margin-top: -4rem;
+    position: relative;
+  }
+}
+@media (max-width: 600px) {
+  #work .work-group .work-card .card-content .title {
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+#work .work-group .work-card .title .arr img {
+  height: 4rem;
+  transition: 0.3s;
+  width: 4rem;
+}
+@media (max-width: 1000px) {
+  #work .work-group .work-card .title .arr img {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+}
+#work .work-group .work-card:hover .title .arr img {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#work .work-group .work-card .title .arr:before {
+  background-color: orange;
+  border-radius: 20rem;
+  content: "";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 0;
+}
+#work .work-group .work-card:hover .title .arr:before {
+  height: 100%;
+  width: 100%;
+}

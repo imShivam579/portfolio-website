@@ -2,10 +2,7 @@ import React from "react";
 
 function Card({ imgPath }) {
   return (
-    <a
-      className={`work-card flex flex-col sm:flex-row-reverse md:flex-col`}
-      href="#"
-    >
+    <a className={`work-card`} href="#">
       <div
         className={`thumb overflow-hidden rounded-xl bg-gray-800 relative w-full`}
       >
@@ -15,12 +12,14 @@ function Card({ imgPath }) {
           alt=""
         />
       </div>
-      <div className="card-wrapper pr-10 md:p-0">
-        <div className="tag-wrapp"></div>
-        <div className="card-text" style={{ minWidth: "240px" }}>
-          <div className="title h4 mt-8 lg:mt-12">Pharaon Capital</div>
-          <p className="mt-2 lg:mt-4">Website & branding</p>
+      <div className="card-content">
+        <div className="title" style={{ minWidth: "240px" }}>
+          <h3 className="h3">Pharaon Capital</h3>
+          <div className="arr">
+            <img src="./images/arrow.svg" alt="arrow" srcset="" />
+          </div>
         </div>
+        <span className="mt-2 lg:mt-4 text-gray-500">Website & branding</span>
       </div>
     </a>
   );
