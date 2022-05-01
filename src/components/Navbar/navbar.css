@@ -1,0 +1,35 @@
+.navbar {
+  height: var(--nav-height);
+}
+.navbar .main-menu li {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: var(--bold-font);
+  margin-left: 4rem;
+  transition: 0.2s ease-out;
+}
+@media (max-width: 800px) {
+  .navbar {
+    position: fixed;
+  }
+  .navbar .mobile-menu {
+    display: flex;
+  }
+  .navbar .main-menu {
+    display: none;
+  }
+}
+#burgerMenu {
+  height: calc(100vh - var(--offSetHeight));
+}
+.menu-bg {
+  height: 10vh;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0%;
+  visibility: hidden;
+  width: 100%;
+  z-index: 11;
+}
