@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
-
+import "./projects.css";
 function Projects() {
   return (
     <div id="work" className="bg-gay-900">
