@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      'mainFont': ["Poppins, sans-serif"],
+    },
     fontSize: {
       "2xl": [
         "24px",

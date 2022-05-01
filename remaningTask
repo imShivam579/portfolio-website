@@ -1,1 +1,20 @@
-- set font-weight className
+- set variable's
+  - font size
+  - font weight
+  - spacing
+  - main font family
+  - element height / weight
+  -
+- set className's
+  - heading's
+  - text
+  - 
+
+- screen breakpoint
+  - 1200px
+  - 1050px
+  - 800px
+  - 600px
+
+- transition / animation 
+
