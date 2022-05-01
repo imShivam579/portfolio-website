@@ -140,18 +140,6 @@ h4,
   width: 100%;
   z-index: 11;
 }
-.hero {
-  background-color: var(--white);
-  overflow: hidden;
-  padding-bottom: 22rem;
-  padding-top: 22rem;
-}
-@media (max-width: 1200px) {
-  .hero {
-    padding-bottom: calc(var(--gap-12) + var(--nav-height));
-    padding-top: calc(var(--gap-12) + var(--nav-height));
-  }
-}
 .navbar {
   height: var(--nav-height);
 }

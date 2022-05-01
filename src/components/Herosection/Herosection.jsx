@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./heroSection.css";
 function Herosection() {
   return (
-    <div className="heroSection h-max  w-screen relative bg-black-100">
+    <div className="heroSection h-max  w-full relative bg-black-100">
       <div className="bg-video absolute top-0 right-0 left-0 bottom-0 -z-10">
         <video
           className="w-screen h-screen object-cover -z-10 saturate-0	"
