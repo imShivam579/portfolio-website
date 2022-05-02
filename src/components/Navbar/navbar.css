@@ -1,26 +1,9 @@
-.navbar {
-  height: var(--nav-height);
-}
 .navbar .main-menu li {
   cursor: pointer;
   font-size: 1.6rem;
-  font-weight: var(--bold-font);
+  font-weight: var(--light-font);
   margin-left: 4rem;
   transition: 0.2s ease-out;
-}
-@media (max-width: 800px) {
-  .navbar {
-    position: fixed;
-  }
-  .navbar .mobile-menu {
-    display: flex;
-  }
-  .navbar .main-menu {
-    display: none;
-  }
-}
-#burgerMenu {
-  height: calc(100vh - var(--offSetHeight));
 }
 .menu-bg {
   height: 10vh;

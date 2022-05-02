@@ -17,7 +17,7 @@ function Herosection() {
       <div className="wrapper relative">
         <div className="hero-content relative left-0 text-left pointer-events-none xLg:left-40">
           <h4 className="text-gray-200 h4">Shivam sharma</h4>
-          <h1 className="text-gray-50 relative sm:mt-8 lg:mt-12 mt-4 left-0 md:left-3 z-10">
+          <h1 className="text-gray-50 relative sm:mt-8 lg:mt-12 mt-4 left-0 md:left-3 z-1">
             <span className="line block">Web Developer</span>
             <span className="line block lg:left-100 md:left-98 sm:left-96 left-1/3 relative">
               Designer

@@ -6,14 +6,14 @@ function Navbar() {
     setMenuOpen(!isMenuOpen);
   }
   return (
-    <nav className="navbar absolute left-0 top-0 right-0 z-10">
+    <nav className="navbar fixed md:absolute left-0 top-0 right-0 z-10 h-[var(--nav-height)]">
       <div className="wrapper h-full w-full py-6 xl:py-8 flex items-center justify-between mx-auto">
         {/* navbar left - brand logo  */}
         <a className="brand-logo text-gray-100 hover:text-gray-200" href="#">
           <h4 className="h4">Navbar</h4>
         </a>
         {/* navbar right - nav menu  */}
-        <div className="main-menu flex">
+        <div className="main-menu md:flex hidden">
           <ul className="flex justify-between">
             <li className="px-4">
               <a className="text-gray-200 hover:text-gray-50" href="#">
@@ -33,7 +33,7 @@ function Navbar() {
           </ul>
         </div>
         {/* navbar right - burger menu  */}
-        <div className={`mobile-menu hidden bg-black z-50 `}>
+        <div className={`mobile-menu flex md:hidden bg-black z-50 `}>
           <button onClick={toggleMenu} className="relative inline-flex z-20">
             <svg
               width="32"

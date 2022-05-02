@@ -95,6 +95,9 @@ module.exports = {
         lg: "1050px",
         xLg: "1200px",
       },
+      zIndex: {
+        1: "1",
+      },
     },
   },
 };
