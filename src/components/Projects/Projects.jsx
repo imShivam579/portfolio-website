@@ -19,8 +19,16 @@ function Projects() {
           <Card imgPath="https://cdn.sanity.io/images/72m24xcw/production/849d155a17ad725ae1b1f396586deb8614c4aedb-1366x768.jpg?w=1366&h=768&auto=format" />
         </div>
         {/* link  */}
-        <span className="block mt-18 text-center">
-          <a href="#">View All</a>
+        <span className="flex mt-[var(--gap-12)] text-center justify-center relative">
+          <a
+            className="link flex items-center max-w-fit relative hover:text-gray-600"
+            href="#"
+          >
+            View All
+            <div className="arr">
+              <img src="./images/arrow.svg" alt="arrow" srcset="" />
+            </div>
+          </a>
         </span>
       </div>
     </div>
