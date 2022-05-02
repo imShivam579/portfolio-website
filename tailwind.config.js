@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      'mainFont': ["Poppins, sans-serif"],
+      mainFont: ["Poppins, sans-serif"],
     },
     fontSize: {
       "2xl": [
@@ -85,9 +85,16 @@ module.exports = {
         28: "6.5rem",
         30: "7rem",
         34: "8rem",
-        100: "48.75rem",
+        96: "23.3rem",
+        98: "33.3rem",
+        100: "43.3rem",
+      },
+      screens: {
+        sm: "600px",
+        md: "800px",
+        lg: "1050px",
+        xLg: "1200px",
       },
     },
   },
-  plugins: [],
 };
