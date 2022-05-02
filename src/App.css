@@ -111,6 +111,20 @@ h2 .line:nth-child(2),
   top: -1rem;
   z-index: -1;
 }
+@media (max-width: 800px) {
+  /* #work h2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    width: 100%;
+    align-items: center;
+  } */
+  #work h2 .line:nth-child(2) {
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
 h3,
 .h3 {
   font-size: var(--h3);
