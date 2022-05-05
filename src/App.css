@@ -149,3 +149,30 @@ h4,
   height: calc(var(--h1) * 1.2);
   overflow: hidden;
 }
+a,
+h5 {
+  font-size: 1.6rem;
+}
+a {
+  color: var(--black);
+  font-weight: var(--bold-font);
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+a.button {
+  align-items: center;
+  background-color: var(--black);
+  border-radius: 10rem;
+  color: var(--white);
+  display: inline-flex;
+  height: 15rem;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  width: 15rem;
+}
+a.button:hover {
+  color: orange;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
