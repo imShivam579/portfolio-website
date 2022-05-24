@@ -1,4 +1,5 @@
 import React from "react";
+import { wrapper } from "../CustomClassName";
 function Herosection() {
   return (
     <div className="heroSection overflow-hidden xLg:py-96 py-[calc(var(--gap-12)+var(--nav-height))] h-max  w-full relative bg-black-100">
@@ -14,7 +15,7 @@ function Herosection() {
           <source src="./videos/bg-video2.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="wrapper relative">
+      <div className={`${wrapper}`}>
         <div className="hero-content relative left-0 text-left pointer-events-none xLg:left-40">
           <h4 className="text-gray-200 h4">Shivam sharma</h4>
           <h1 className="text-gray-50 relative sm:mt-8 lg:mt-12 mt-4 left-0 md:left-3 z-1">

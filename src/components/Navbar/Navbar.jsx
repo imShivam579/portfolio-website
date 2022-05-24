@@ -1,39 +1,49 @@
 import React, { useState } from "react";
-import "./navbar.css";
+import {
+  wrapper,
+  navbar,
+  navbar_wrapper,
+  navbar_brandLogo,
+  navbar_mainMenu,
+  navbar_menuBG,
+  navbar_mobileMenu,
+  navbar_menuItems,
+  navbar_mobileMenuUL,
+} from "../CustomClassName";
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   function toggleMenu() {
     setMenuOpen(!isMenuOpen);
   }
   return (
-    <nav className="navbar fixed md:absolute left-0 top-0 right-0 z-10 h-[var(--nav-height)]">
-      <div className="wrapper h-full w-full py-6 xl:py-8 flex items-center justify-between mx-auto">
+    <nav className={`${navbar}`}>
+      <div className={`${wrapper} ${navbar_wrapper}`}>
         {/* navbar left - brand logo  */}
-        <a className="brand-logo text-gray-100 hover:text-gray-200" href="#">
+        <a className={`${navbar_brandLogo}`} href="#">
           <h4 className="h4">Navbar</h4>
         </a>
         {/* navbar right - nav menu  */}
-        <div className="main-menu md:flex hidden">
-          <ul className="flex justify-between">
-            <li className="px-4">
-              <a className="text-gray-200 hover:text-gray-50" href="#">
+        <div className={navbar_mainMenu}>
+          <ul className="flex justify-between text-gray-200">
+            <li className="">
+              <a className="" href="#">
                 Work
               </a>
             </li>
-            <li className="px-4">
-              <a className="text-gray-200 hover:text-gray-50" href="#">
+            <li className="">
+              <a className="" href="#">
                 About me
               </a>
             </li>
-            <li className="px-4">
-              <a className="text-gray-200 hover:text-gray-50" href="#">
+            <li className="">
+              <a className="" href="#">
                 Contact
               </a>
             </li>
           </ul>
         </div>
         {/* navbar right - burger menu  */}
-        <div className={`mobile-menu flex md:hidden bg-black z-50 `}>
+        <div className={navbar_mobileMenu}>
           <button onClick={toggleMenu} className="relative inline-flex z-20">
             <svg
               width="32"
@@ -65,26 +75,22 @@ function Navbar() {
               />
             </svg>
           </button>
-          <div className="menu-bg menu-bg-1"></div>
-          <div className="menu-bg menu-bg-2"></div>
-          <div
-            className={`menu-items absolute top-0 left-0 h-screen w-full bg-primary-100 ${
-              !isMenuOpen ? "hidden" : ""
-            }`}
-          >
-            <ul className="h-full w-full flex flex-col justify-center items-center">
-              <li className="px-4">
-                <a className="text-gray-200 hover:text-gray-50 h2" href="#">
+          <div className={`${navbar_menuBG} menu-bg-1`}></div>
+          <div className={`${navbar_menuBG} menu-bg-2`}></div>
+          <div className={`${navbar_menuItems} ${!isMenuOpen ? "hidden" : ""}`}>
+            <ul className={`${navbar_mobileMenuUL}`}>
+              <li>
+                <a className="link" href="#">
                   Work
                 </a>
               </li>
-              <li className="px-4">
-                <a className="text-gray-200 hover:text-gray-50 h2" href="#">
+              <li>
+                <a className="link" href="#">
                   About me
                 </a>
               </li>
-              <li className="px-4">
-                <a className="text-gray-200 hover:text-gray-50 h2" href="#">
+              <li>
+                <a className="link" href="#">
                   Contact
                 </a>
               </li>

@@ -10,7 +10,7 @@
   --body: 2rem;
   --h1: 12rem;
   --h2: 7.2rem;
-  --h3: 3.6rem;
+  --h3: 3.2rem;
   --h4: 2.4rem;
   --gap-12: 12rem;
   --gap-6: 6rem;
@@ -139,22 +139,11 @@ h4,
   line-height: 32px;
   letter-spacing: -0.015em;
 }
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
-}
-.line {
-  display: block;
-  height: calc(var(--h1) * 1.2);
-  overflow: hidden;
-}
 a,
 h5 {
   font-size: 1.6rem;
 }
 a {
-  color: var(--black);
   font-weight: var(--bold-font);
   text-decoration: none;
   transition: 0.2s ease-out;
@@ -175,4 +164,25 @@ a.button:hover {
   color: orange;
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
+}
+.line {
+  display: block;
+  height: calc(var(--h1) * 1.2);
+  overflow: hidden;
+}
+.link {
+  color: rgb(214, 214, 214);
+}
+.link:hover {
+  color: rgb(236, 236, 236);
+}
+.navbar .main-menu li {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: var(--light-font);
+  margin-left: 4rem;
+  transition: 0.2s ease-out;
+}
+.navbar .mobile-menu ul li {
+  padding: 0rem 1rem;
 }

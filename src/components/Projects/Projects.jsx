@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../Card/Card";
+import { wrapper } from "../CustomClassName";
 import "./projects.css";
 function Projects() {
   return (
-    <div id="work" className="bg-gay-900 py-[var(--gap-12)] px-0">
-      <div className="wrapper p-0 md:pt-32 relative">
+    <div id="work" className="bg-gray-50 py-[var(--gap-12)] px-0">
+      <div className={`${wrapper}p-0 md:pt-32 relative`}>
         <h2 className="text-left inline-flex md:items-start md:flex-col md:absolute top-0 left-0 z-1 flex-row flex-wrap static w-full items-center">
           <span className="line mr-6 md:mr-0 relative top-0 left-0">
             Selected
